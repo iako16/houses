@@ -73,6 +73,7 @@ ul li a:hover {
     background-color: rgb(198, 231, 206);
     display: flex;
     justify-content: center;
+    z-index: -1;
 }
 .filter-home{
    width: 395px;
@@ -80,14 +81,6 @@ ul li a:hover {
    border-radius: 24px;
    background: #F8F8F8;
    box-shadow: 0px 4px 25px 0px rgba(194, 194, 194, 0.31);
-}
-.search{
-  display: block;
-  width: 1225px;
-  height: 751px;
-  margin-left: 20px;
-  border-radius: 24px;
-  background-color: antiquewhite;
 }
 .search img{
     border-radius: 24px;
@@ -114,7 +107,7 @@ ul li a:hover {
     width: 90%;
     height: 148px;
     margin: 0 auto;
-    background-color: #29B24E;
+    background-color:#F8F8F8;;
     /* position: relative; */
 }
 .location-head h4{
@@ -152,7 +145,7 @@ ul li a:hover {
 .property-list{
      width: 90%;
      height: 20px;
-     background-color: rgb(255, 255, 255);
+     background-color:#F8F8F8;;
      margin: 5px auto;
      display: flex;
      flex-direction: row;
@@ -172,7 +165,7 @@ ul li a:hover {
 .Price-range{
     width: 90%;
      height: 20px;
-     background-color: rgb(255, 255, 255);
+     background-color: #F8F8F8;;
      margin: 5px auto;
      display: flex;
      flex-direction: row;
@@ -182,6 +175,46 @@ ul li a:hover {
     height: 16px;
     border-radius: 3px;
     border: 1.4px solid #29B24E;
-    opacity: 0.9
+    opacity: 0.9;
     margin-right: 15px;
 }
+.search{
+    display: relative;
+    width: 1225px;
+    height: 751px;
+    margin-left: 20px;
+    border-radius: 24px;
+    background-color: antiquewhite;
+  }
+  .tower{
+    z-index: -1;
+  }
+  .search h1{
+    margin-top: -700px;
+    margin-left: 230px;
+    font-family: Poppins;
+    font-size: 48px;
+     font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .search h3 {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.8;
+    margin-left: 400px;
+  }
+  .image-search{
+    width: 324px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(248, 248, 248, 0.80);
+    box-shadow: 0px 4px 10px 0px rgba(124, 124, 124, 0.27);
+    z-index: 3;
+    margin-left: 400px;
+    margin-top: 20px;
+  }
