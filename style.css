@@ -70,7 +70,7 @@ ul li a:hover {
     width: 90%;
     margin: 0 auto;
     height: 751px;
-    background-color: rgb(198, 231, 206);
+    background-color: #F8F8F8;
     display: flex;
     justify-content: center;
     z-index: -1;
@@ -137,6 +137,16 @@ ul li a:hover {
     margin-top: -20px;
     margin-right: 18px;
 }
+.trending {
+    margin-left: 100px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: bolder;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
 .property{
     max-width: 400px;
     margin: 0 auto;
@@ -184,6 +194,8 @@ ul li a:hover {
     height: 751px;
     margin-left: 20px;
     border-radius: 24px;
+    opacity: 1;
+    z-index: 1;
     background-color: antiquewhite;
   }
   .tower{
@@ -212,7 +224,7 @@ ul li a:hover {
     width: 324px;
     height: 48px;
     border-radius: 10px;
-    background: rgba(248, 248, 248, 0.80);
+    background: #F8F8F8;
     box-shadow: 0px 4px 10px 0px rgba(124, 124, 124, 0.27);
     z-index: 3;
     margin-left: 400px;
@@ -239,7 +251,7 @@ ul li a:hover {
   }
   .home h5{
     color: #000;
-    font-family: Poppins;
+    font-family: 'main font';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -258,7 +270,7 @@ ul li a:hover {
   } */
   .location-house{
     margin-left: 20px;
-    font-family: Poppins;
+    font-family: 'main font';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -267,7 +279,7 @@ ul li a:hover {
   }
   .money{
     color: #29B24E;
-    font-family: Poppins;
+    font-family: 'main font';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -295,34 +307,326 @@ ul li a:hover {
   footer{
     max-width: 1920px;
     width: 90%;
-    height: 179px;
+    height: 180px;
     margin: 0 auto;
-    margin-top: 120px;
-    background-color: green;
+    border-radius: 25px;
+    /* margin-top: 120px; */
+    background-color: #29B24E;
+    
+  }
+  .navigation{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    /* ვერ ვასწორებ ვერანაირად */
+  }
+.line-above{
+    display: flex;
+    justify-content: space-around;
+}
+.line{
+    width: 1200px;
+    height: 1px;
+    border-radius: 40px;
+    background: #D0D0D0;
+    margin: 0 auto;
+}
+.navigation ul li a{
+    color: #FFF;
+    font-family:'main font';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer p{
+    color: #FFF;
+    font-family: 'main font';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ .social a {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+.social a:hover {
+    border-bottom: 1px solid  #f1f4f2;
+    width: 42px;
+    font-size: 20px ;
+    transition: 0.2s ease-in-out;
+}
+footer p:hover{
+    width: 175px;
+    font-size: 19px;
+    border-bottom: 2px solid  #dbdedf;
+    transition: 0.2s ease-in-out;
+}
+.line-under{
+    margin-left: 540px;
+    margin-top: 30px;
+}
+
+.big-house{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: big-house;
     display: flex;
     justify-content: space-between;
-  }
-  footer nav{
-    padding-top: 5px;
+}
+.biggie-house{
+    width: 700px;
+    height: 632px;
+    background-color:#F8F8F8;
+}
+.house-description{
+    width: 700px;
+    height: 632px;
+    padding: 10px;
+}
+.biggie-house img{
+    width: 700px;
+    height: 632px;
+    object-fit: cover;
+}
+.description-head{
+    display: flex;
+    justify-content: space-between;
+}
+.vip{
+    width: 76px;
+    height: 28px;
+    border-radius: 15px;
+    background: #29B24E;
+    position: relative;
+}
+.vip p{
+    /* margin: 0 auto; ?????? რატოა რ მუშაობს */
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 6px;
+    margin-left: 9px;
+}
+.view {
     display: flex;
     flex-direction: row;
-    margin-top:10px;
-    margin-left: 30px;
-  }
-  .support{
-    margin-top: 10px;
-  }
-  .social{
+    justify-content: center;
+}
+.view p{
+    margin-left: 5px;
+}
+.house-description h2{
+    margin-top: 12px;
+}
+.house-description h4{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+    margin-top: 12px;
+}
+.house-description{
+    color: #000;
+    font-family: 'main font';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 32px;
+}
+.house-tour {
+    width: 657px;
+    height: 60px;
+    /* margin: 0 auto; */
+    border-bottom: 1px solid #ECECEC;
+    border-top: 1px solid #ECECEC;
+    display: flex;
+    padding: 15px;
+}
+.house-tour p {
+    margin-left: 10px;
+    color: #000;
+    font-family: 'main font';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px; /* 164.286% */
+}
+.house-tour p :first-child {
+    margin-left:none;
+}
+.other-information{
+    display: flex;
+    justify-content: space-between;
+}
+.one-column{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.one-column div{
+    padding-top: 20px;
+
+}
+.one-column h6 {
+    color: #000;
+    font-family: 'mane font';
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 23px; /* 164.286% */
+}
+.one-column p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    opacity: 0.5;
+}
+.two-colum{
+    margin-top: 30px;
+}
+.two-colum  p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; /* 191.667% */
+}
+.two-column h6{
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    opacity: 0.5;
+    margin-top: 0px;
+}
+.three-column p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    opacity: 0.5;
+}
+.three-column h6{
+    color: #000;
+    font-family: 'mane font';
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 23px; 
+}
+.three-column{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.three-column div{
+    padding-top: 20px;
+
+}
+.two-column{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.two-column div{
+    padding-top: 20px;
+
+}
+.line-below {
+    width: 100%px;
+    height: 1px;
+    background-color: #ECECEC;
+    margin-top: 20px;
+}
+.money-green{
     width: 200px;
+    height: 70px;
     display: flex;
     flex-direction: row;
-    margin-left:40px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.money-green :first-child {
+    color: #29B24E;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.send{
+    display: flex;
+    justify-content: space-evenly;
+}
+.send-us{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #29B24E;
+    margin-top:40px;
+    margin-right: 10px;
+}
+.send-us p{
+    color: #29B24E;
+    font-family: 'mane-font';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px;
     margin-top: 10px;
-    padding: 5px 10px;
+}
+.call{
+    width: 80px;
+    height: 43px;
+    padding: 13px 26px;
+    border-radius: 12px;
+    background: #29B24E;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.call p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.green-cost{
+    display: flex;
+    justify-content: space-between;
+}
+.second-homes{
+    max-width: 90%;
+    width: 1920px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .line{
-    width: 1640px;
-     height: 1px;
-    background-color: white;  
-    margin-top: 100px;
-  }
+ 
+
+
